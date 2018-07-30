@@ -2,7 +2,7 @@
 
 'use strict';
 
-const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
+const PAGE_ACCESS_TOKEN = 'EAADHiCNRvhQBAF7rJWo5c2CsKVBJRfbkUo0gHtrVYHXVtGwHHKX5FgFw4sAB72XqdoRjtNZBhQvJ9v2gZARDjBuDGDgFdN9yILbfuSnuJC13csYy1bX9iT4F3WTDbDHHJNvkhJtsZAL43WaA4G2Kwf7hrO1zMK5EkVuqsGvZCwZDZD';
 const request = require('request');
 
 // Imports dependencies and set up http server
@@ -160,7 +160,7 @@ function callSendAPI(sender_psid, response) {
   }
 
   console.log('Page Token', PAGE_ACCESS_TOKEN);
-  
+
   // Send the HTTP request to the Messenger Platform
   request({
     "uri": "https://graph.facebook.com/v2.6/me/messages",
