@@ -149,6 +149,8 @@ function handlePostback(sender_psid, received_postback) {
 }
 
 function callSendAPI(sender_psid, response) {
+
+  console.log(response);
   // Construct the message body
   let request_body = {
     "recipient": {
